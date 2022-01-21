@@ -1,0 +1,45 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "RSS Reader",
+  "main": "src/init.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunsez/frontend-project-lvl3.git"
+  },
+  "author": "Astemir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astik-t/frontend-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/astik-t/frontend-project-lvl2#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "html-webpack-plugin": "^5.2.0",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "i18next": "^19.9.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "on-change": "^2.2.3",
+    "popper.js": "^1.16.1",
+    "yup": "^0.32.9"
+  }
+}
