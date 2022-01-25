@@ -21,9 +21,9 @@ beforeEach(async () => {
 });
 
 test('should work', async () => {
-  expect(screen.getByText('RSS Reader', { selector: 'h1' })).toBeInTheDocument();
-  expect(screen.queryByText('Start reading RSS today! It is easy, it is nicely.')).toBeInTheDocument();
-  expect(screen.getByText(/Add/)).toBeEnabled();
+  expect(screen.getByText('RSS агрегатор', { selector: 'h1' })).toBeInTheDocument();
+  expect(screen.queryByText('Начните читать RSS сегодня! Это легко, это красиво.')).toBeInTheDocument();
+  expect(screen.getByText(/Добавить/)).toBeEnabled();
 });
 
 test('submit url should work', async () => {
@@ -38,14 +38,14 @@ test('submit url should work', async () => {
     });
 
   const urlElement = screen.getByRole('textbox', { name: 'url' });
-  const submitElement = screen.getByText(/Add/);
+  const submitElement = screen.getByText(/Добавить/);
 
   await userEvent.type(urlElement, 'https://ru.hexlet.io/lessons.rss');
   userEvent.click(submitElement);
   expect(submitElement).toBeDisabled();
 
   await waitFor(() => {
-    expect(document.body).toHaveTextContent('Rss has been loaded');
+    expect(document.body).toHaveTextContent('RSS успешно загружен');
   });
 
   scope.done();
@@ -66,14 +66,14 @@ test('modal', async () => {
     });
 
   const urlElement = screen.getByRole('textbox', { name: 'url' });
-  const submitElement = screen.getByText(/Add/);
+  const submitElement = screen.getByText(/Добавить/);
 
   await userEvent.type(urlElement, 'https://ru.hexlet.io/lessons.rss');
   userEvent.click(submitElement);
   expect(submitElement).toBeDisabled();
 
   await waitFor(() => {
-    expect(document.body).toHaveTextContent('Rss has been loaded');
+    expect(document.body).toHaveTextContent('RSS успешно загружен');
   });
 
   scope.done();

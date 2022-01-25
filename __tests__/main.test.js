@@ -33,35 +33,35 @@ beforeEach(async () => {
   init();
 });
 
-test('rss has been loaded', async () => {
+test('RSS успешно загружен', async () => {
   applyNock(rssUrl, { contents: rss });
   userEvent.type(elements.input, rssUrl);
   userEvent.click(elements.submit);
-  expect(await screen.findByText(/Rss has been loaded/i)).toBeInTheDocument();
+  expect(await screen.findByText(/RSS успешно загружен/i)).toBeInTheDocument();
 });
 
 test('unique', async () => {
   applyNock(rssUrl, { contents: rss });
   userEvent.type(elements.input, rssUrl);
   userEvent.click(elements.submit);
-  expect(await screen.findByText(/Rss has been loaded/i)).toBeInTheDocument();
+  expect(await screen.findByText(/RSS успешно загружен/i)).toBeInTheDocument();
   userEvent.type(elements.input, rssUrl);
   userEvent.click(elements.submit);
-  expect(await screen.findByText(/Rss already exists/i)).toBeInTheDocument();
+  expect(await screen.findByText(/RSS уже существует/i)).toBeInTheDocument();
 });
 
 test('invalid rss', async () => {
   applyNock('http://norss.ru', 'invalidrss');
   userEvent.type(elements.input, 'http://norss.ru');
   userEvent.click(elements.submit);
-  expect(await screen.findByText(/This source doesn\'t contain valid rss/i)).toBeInTheDocument();
+  expect(await screen.findByText(/Ресурс не содержит \ валидный RSS/i)).toBeInTheDocument();
 });
 
 test('modal', async () => {
   applyNock(rssUrl, { contents: rss });
   userEvent.type(elements.input, rssUrl);
   userEvent.click(elements.submit);
-  await screen.findByText(/Rss has been loaded/i);
+  await screen.findByText(/RSS успешно загружен/i);
   const previewBtns = await screen.findAllByRole('button', { name: /preview/i });
   userEvent.click(previewBtns[0]);
   expect(await screen.findByText('Cupidatat aliqua minim incididunt adipisicing officia proident quis pariatur fugiat consequat.')).toBeVisible();

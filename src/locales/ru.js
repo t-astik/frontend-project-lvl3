@@ -1,6 +1,6 @@
 export default {
   translation: {
-    title: 'RSS Reader',
+    title: 'RSS агрегатор',
     subtitle: 'Начните читать RSS уже сегодня! Это легко, это приятно.',
     preview: 'Предпросмотр',
     feeds: 'Потоки',

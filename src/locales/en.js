@@ -1,12 +1,12 @@
 export default {
   translation: {
     success: {
-      finished: 'Rss has been loaded',
+      finished: 'RSS успешно загружен',
     },
     errors: {
-      'invalid-rss': 'This source doesn\'t contain valid rss',
-      'invalid-url': 'Must be valid url',
-      'rss already exist': 'Rss already exists',
+      'invalid-rss': 'Ресурс не содержит \ валидный RSS',
+      'invalid-url': 'Ссылка должна быть валидным URL',
+      'rss already exist': 'RSS уже существует',
       'Network Error': 'Network error',
       'Update Error': 'Update Error',
     },

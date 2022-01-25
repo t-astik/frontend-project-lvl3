@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/maradondt/frontend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/maradondt/frontend-project-lvl3/actions)",
+  "description": "[![Actions Status](https://github.com/astik-t/frontend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/astik-t/frontend-project-lvl3/actions)",
   "main": "src/init.js",
   "scripts": {
     "test": "jest --colors"
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maradondt/frontend-project-lvl3.git"
+    "url": "git+https://github.com/astik-t/frontend-project-lvl3.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maradondt/frontend-project-lvl3/issues"
+    "url": "https://github.com/astik-t/frontend-project-lvl3/issues"
   },
-  "homepage": "https://github.com/maradondt/frontend-project-lvl3#readme",
+  "homepage": "https://github.com/astik-t/frontend-project-lvl3#readme",
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
     "axios": "^0.21.1",
@@ -55,7 +55,7 @@
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.19.0",
-    "webpack-cli": "^4.4.0",
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^3.11.2"
   }
 }

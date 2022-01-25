@@ -19,7 +19,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: 'RSS Reader',
+      title: 'RSS агрегатор',
       template: 'index.html',
     }),
   ],
