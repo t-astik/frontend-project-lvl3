@@ -31,7 +31,7 @@ const createPosts = (posts, feedId) => posts
 const handleErrors = (err, state) => {
   const watchedState = state;
   watchedState.form.errors = [...watchedState.form.errors, err];
-  if (err.message === 'Network Error' || err.message === 'invalid-rss') {
+  if (err.message === 'Ошибка сети' || err.message === 'invalid-rss') {
     watchedState.form.processState = 'failed';
   } else {
     watchedState.form.valid = false;
@@ -49,7 +49,7 @@ const getRSS = (url) => axios
   .get(getProxyUrl(url), { timeout: 10000 })
   .then((responce) => responce.data)
   .catch(() => {
-    throw new Error('Network Error');
+    throw new Error('Ошибка сети');
   });
 
 const createFeed = ({ title, description }, url) => ({
