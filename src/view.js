@@ -3,8 +3,8 @@
 import onChange from 'on-change';
 
 const markAsRead = (titleEl) => {
-  titleEl.classList.remove('font-weight-bold');
-  titleEl.classList.add('font-weight-normal');
+  titleEl.classList.remove('fw-bold');
+  titleEl.classList.add('fw-normal');
 };
 
 const fillModalWithContent = (modal, item) => {
