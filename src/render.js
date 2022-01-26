@@ -45,7 +45,7 @@ const buildPostsList = (posts, state) => {
     li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-start');
     const link = document.createElement('a');
 
-    link.classList.add(readPosts.find((readId) => readId === post.id) ? 'fw-normal' : 'fw-bold');
+    //link.classList.add(readPosts.find((readId) => readId === post.id) ? 'fw-normal' : 'fw-bold');
     link.classList.add(readPosts.find((readId) => readId === post.id) ? 'font-weight-normal' : 'font-weight-bold');
     link.href = post.link;
     link.target = '_blank';
