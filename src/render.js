@@ -46,7 +46,7 @@ const buildPostsList = (posts, state) => {
     const link = document.createElement('a');
 
     link.classList.add(readPosts.find((readId) => readId === post.id) ? 'fw-normal' : 'fw-bold');
-    link.classList.add(readPosts.find((readId) => readId === post.id) ? 'fw-normal' : 'fw-bold');
+    link.classList.add(readPosts.find((readId) => readId === post.id) ? 'font-weight-normal' : 'font-weight-bold');
     link.href = post.link;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
